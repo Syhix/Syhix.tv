@@ -8,19 +8,22 @@
 
 .content {
     padding: 5px;
-    margin: 30vh 60vh;
+    margin: 30vh 10%;
     border-radius: 10px;
     background-color: rgb(180, 180, 180, 0.3);
     text-align: center;
     box-shadow: 3px 3px 2px rgb(180, 180, 180, 0.5);
 }
 .head {
-    font-family: Marrianne, sans-serif;
+    font-family: Marianne;
     color: white;
     background: linear-gradient(42deg,#f00 10%,#00f 100%) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.content span {
+    font-family: Marianne;
 }
 .nav-medias {
     padding-top: 10px;
@@ -56,7 +59,6 @@
 
 @font-face {
     font-family: Marianne;
-    src: url(https://syhix.github.io/Syhix.tv/assets/fonts/Marianne-Bold.otf) format("opentype");
-    font-weight: 700;
+    src: url(/assets/fonts/Marianne-Bold.otf) format("opentype");
     font-display: swap
 }
