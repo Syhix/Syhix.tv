@@ -1,0 +1,28 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+#syhix {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#content {
+    flex-grow: 1;
+}
+html {
+    font-family: Marianne;
+    background: #140012; /*871F78*/
+}
+
+
+
+@font-face {
+	font-family: Marianne;
+	src: url("/assets/fonts/Marianne-Bold.otf") format("opentype");
+	font-weight: bold;
+	font-display: swap;
+}
