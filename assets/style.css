@@ -58,8 +58,8 @@ html {
 }
 
 @font-face {
-    font-family: Marianne;
-    src: url(assets/fonts/Marianne-Bold.otf) format("opentype");
+    font-family: Marianne, sans-serif;
+    src: url(../assets/fonts/Marianne-Bold.otf) format("opentype");
     font-weight: 700;
     font-display: swap
 }
