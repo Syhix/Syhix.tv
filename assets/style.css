@@ -31,6 +31,6 @@ html {
 .fa-twitter {color: #1d9bf0;}
 .fa-youtube {color: #ff0000;}
 .fa-twitch {color: #9146ff;}
-.fa-instagram {color: #f56040;}
+.fa-instagram {background: linear-gradient(42deg, #febd1d 10%, #c1009a 100%) no-repeat; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
 .fa-github {color: #4078c0;}
 .fa-discord {color: #5865F2;}
