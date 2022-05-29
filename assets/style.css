@@ -18,7 +18,7 @@
 }
 
 .head {
-    font-family: Marianne;
+    font-family: Marianne, sans-serif;
     color: white;
     background: linear-gradient(42deg, #f00 10%, #00f 100%) no-repeat;
     -webkit-background-clip: text;
@@ -27,7 +27,7 @@
 }
 
 .content span {
-    font-family: Marianne;
+    font-family: Marianne, sans-serif;
 }
 
 .nav-medias {
@@ -75,6 +75,6 @@
 
 @font-face {
     font-family: Marianne;
-    src: url(/assets/fonts/Marianne-Bold.otf) format("opentype");
+    src: url(assets/fonts/Marianne-Bold.otf) format("opentype");
     font-display: swap
 }
