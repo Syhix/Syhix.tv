@@ -3,28 +3,33 @@
 ::before {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
+    user-select: none;
 }
 
 .content {
-    padding: 5px;
-    margin: 30vh 10%;
+    padding: 2em;
+    width: 600px;
+    margin: 10em auto;
     border-radius: 10px;
     background-color: rgb(180, 180, 180, 0.3);
     text-align: center;
     box-shadow: 3px 3px 2px rgb(180, 180, 180, 0.5);
 }
+
 .head {
     font-family: Marianne;
     color: white;
-    background: linear-gradient(42deg,#f00 10%,#00f 100%) no-repeat;
+    background: linear-gradient(42deg, #f00 10%, #00f 100%) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .content span {
     font-family: Marianne;
 }
+
 .nav-medias {
     padding-top: 10px;
 }
@@ -55,6 +60,17 @@
 
 .fa-discord {
     color: #5865f2
+}
+
+@media only screen and (max-width: 700px) {
+    .content {
+        margin: 0 auto;
+        width: auto;
+        border-radius: 0px;
+        box-shadow: none;
+        box-shadow: 0px 3px 0px rgb(180, 180, 180, 0.5);
+    }
+
 }
 
 @font-face {
