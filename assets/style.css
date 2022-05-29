@@ -1,28 +1,65 @@
 *,
-::before,
-::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
 }
-#syhix {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-#content {
-    flex-grow: 1;
-}
+
 html {
-    font-family: Marianne;
-    background: #140012; /*871F78*/
+    font-family: Marianne
 }
 
+.content {
+    padding: 5px;
+    margin: 30vh 60vh;
+    border-radius: 10px;
+    background-color: rgb(180, 180, 180, 0.3);
+    text-align: center;
+    box-shadow: 3px 3px 2px rgb(180, 180, 180, 0.5);
+}
+.head {
+    color: white;
+    background: linear-gradient(42deg,#f00 10%,#00f 100%) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-medias {
+    padding-top: 10px;
+}
 
+.fa-brands {
+    font-size: 30px
+}
+
+.fa-twitter {
+    color: #1d9bf0
+}
+
+.fa-youtube {
+    color: red
+}
+
+.fa-twitch {
+    color: #9146ff
+}
+
+.fa-instagram {
+    color: #f56040
+}
+
+.fa-github {
+    color: #4078c0
+}
+
+.fa-discord {
+    color: #5865f2
+}
 
 @font-face {
-	font-family: Marianne;
-	src: url("/assets/fonts/Marianne-Bold.otf") format("opentype");
-	font-weight: bold;
-	font-display: swap;
+    font-family: Marianne;
+    src: url(/assets/fonts/Marianne-Bold.otf) format("opentype");
+    font-weight: 700;
+    font-display: swap
 }
