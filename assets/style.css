@@ -75,6 +75,6 @@
 
 @font-face {
     font-family: Marianne;
-    src: url(assets/fonts/Marianne-Bold.otf) format("opentype");
+    src: url(../assets/fonts/Marianne-Bold.otf) format("opentype");
     font-display: swap
 }
