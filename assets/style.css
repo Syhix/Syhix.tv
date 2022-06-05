@@ -6,15 +6,18 @@
     padding: 0;
     user-select: none;
 }
+html {
+    background-color: #0d1117;
+}
 
 .content {
     padding: 2em;
     width: 600px;
     margin: 10em auto;
-    border-radius: 10px;
-    background-color: rgb(180, 180, 180, 0.3);
+    border-radius: 5px;
+    background-color: rgb(180, 180, 180, 0.1);
     text-align: center;
-    box-shadow: 3px 3px 2px rgb(180, 180, 180, 0.5);
+    box-shadow: 3px 3px 2px rgb(180, 180, 180, 0.050);
 }
 
 .head {
@@ -28,6 +31,7 @@
 
 .content span {
     font-family: Marianne, sans-serif;
+    color: white;
 }
 
 .nav-medias {
