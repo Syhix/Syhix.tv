@@ -9,6 +9,17 @@
 html {
     background-color: #0d1117;
 }
+*::-webkit-scrollbar {
+    width: 8px;
+}
+*::-webkit-scrollbar-track {
+	background: #1e2127;
+    border-radius: 0px;
+}
+*::-webkit-scrollbar-thumb {
+	background: #010409;
+	border-radius: 4px;
+}
 
 .content {
     padding: 2em;
