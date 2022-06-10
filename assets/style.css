@@ -1,36 +1,95 @@
 *,
-::before,
-::after {
+::after,
+::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-#syhix {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-#content {
-    flex-grow: 1;
+    user-select: none;
 }
 html {
-    font-family: Marianne;
-    background: #140012;
-    /*871F78*/
+    background-color: #0d1117;
 }
+*::-webkit-scrollbar {
+    width: 8px;
+}
+*::-webkit-scrollbar-track {
+	background: #1e2127;
+    border-radius: 0px;
+}
+*::-webkit-scrollbar-thumb {
+	background: #010409;
+	border-radius: 4px;
+}
+
+.content {
+    padding: 2em;
+    width: 600px;
+    margin: 10em auto;
+    border-radius: 5px;
+    background-color: rgb(180, 180, 180, 0.1);
+    text-align: center;
+    box-shadow: 3px 3px 2px rgb(180, 180, 180, 0.050);
+}
+
+.head {
+    font-family: Marianne, sans-serif;
+    color: white;
+    background: linear-gradient(42deg, #f00 10%, #00f 100%) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content span {
+    font-family: Marianne, sans-serif;
+    color: white;
+}
+
 .nav-medias {
-    padding: 20px;
-    display: flex;
-    background-color: #3f3f3f;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    font-family: Marianne;
+    padding-top: 10px;
 }
-.fa-brands {font-size: 30px;}
-.fa-twitter {color: #1d9bf0;}
-.fa-youtube {color: #ff0000;}
-.fa-twitch {color: #9146ff;}
-.fa-instagram {background: linear-gradient(42deg, #febd1d 10%, #c1009a 100%) no-repeat; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;}
-.fa-github {color: #4078c0;}
-.fa-discord {color: #5865F2;}
+
+.fa-brands {
+    font-size: 30px
+}
+
+.fa-twitter {
+    color: #1d9bf0
+}
+
+.fa-youtube {
+    color: red
+}
+
+.fa-twitch {
+    color: #9146ff
+}
+
+.fa-instagram {
+    color: #f56040
+}
+
+.fa-github {
+    color: #4078c0
+}
+
+.fa-discord {
+    color: #5865f2
+}
+
+@media only screen and (max-width: 700px) {
+    .content {
+        margin: 0 auto;
+        width: auto;
+        border-radius: 0px;
+        box-shadow: none;
+        box-shadow: 0px 3px 0px rgb(180, 180, 180, 0.5);
+    }
+
+}
+
+@font-face {
+    font-family: Marianne;
+    src: url(../assets/fonts/Marianne-Bold.otf) format("opentype");
+    font-display: swap
+}
