@@ -20,7 +20,6 @@ html {
 	background: #010409;
 	border-radius: 4px;
 }
-
 .content {
     padding: 2em;
     width: 600px;
@@ -48,7 +47,16 @@ html {
 .nav-medias {
     padding-top: 10px;
 }
-
+.media {
+    display: flex;
+    justify-content: center;
+}
+.cardcontent {
+    background-color: #0d1117;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
 .fa-brands {
     font-size: 30px
 }

@@ -1,0 +1,42 @@
+.icons {
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-size: 16px;
+}
+
+.icons {
+	width: 16px;
+	height: 16px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.loading {
+    background-image: url(/assets/img/616373152598982675.gif);
+}
+html {
+    background-image: url(https://minecraftvanilla.net/assets/img/bg);
+    background-size: 20%;
+}
+.main {
+    background-color: rgb(126, 104, 78);
+    padding: 2em;
+    width: 50em;
+    margin: 10em auto;
+    text-align: center;
+}
+.logos {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .main {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
