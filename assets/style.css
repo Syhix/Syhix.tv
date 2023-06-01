@@ -33,7 +33,7 @@ html {
 .head {
     font-family: Marianne, sans-serif;
     color: white;
-    background: linear-gradient(42deg, #f00 10%, #00f 100%) no-repeat;
+    background: linear-gradient(42deg, #b364dd 10%, #40418f 100%) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
