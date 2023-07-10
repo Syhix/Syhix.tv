@@ -1,0 +1,81 @@
+#RewriteEngine On
+#RewriteBase /
+#RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+#RewriteRule ^ %1 [R=301,L]
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule ^(.*?)/?$ $1.php [NC,L]
+#RewriteRule ^(.*?)/?$ $1.html [NC,L]
+
+# Redirection  http vers https
+#RewriteEngine On
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+
+# Redirection du site avec www vers la version sans www
+RewriteCond %{HTTP_HOST} ^www\.syhix\.tv [NC]
+RewriteRule ^(.*)$ https://syhix.tv/$1 [L,R=301]
+
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L] 
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.json -f
+RewriteRule ^(.*)$ $1.json [NC,L]
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.png -f
+RewriteRule ^(.*)$ $1.png [NC,L]
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.jpg -f
+RewriteRule ^(.*)$ $1.jpg [NC,L]
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.jpeg -f
+RewriteRule ^(.*)$ $1.jpeg [NC,L]
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.webp -f
+RewriteRule ^(.*)$ $1.webp [NC,L]
+
+# Erreur doc
+ErrorDocument 403 /error_docs/forbidden.html
+ErrorDocument 404 /error_docs/not_found.html
+ErrorDocument 503 /error_docs/maintenace.html
+
+RewriteCond %{REQUEST_URI} !^/errorpage/503 [NC]
+#RewriteCond %{REQUEST_URI} !^/assets/
+# RewriteRule .* /errorpage/503 [L]
+
+
+# Désactiver l'affichage du contenu des répertoires
+Options All -Indexes
+# Alternative pour empêcher le listage des répertoires
+IndexIgnore *
+# Protéger les fichiers .htaccess et .htpasswds
+<Files ~ "^.*\.([Hh][Tt][AaPp])">
+order allow,deny
+deny from all
+satisfy all
+</Files>
+
+
+RewriteRule ^minecraft/forge/version.json$ /minecraft/forge/version.php
+RewriteRule ^minecraft/forge/version$ /minecraft/forge/version.php
+RewriteRule ^minecraft/vanilla/version.json$ /minecraft/vanilla/version.php
+RewriteRule ^minecraft/vanilla/version$ /minecraft/vanilla/version.php
