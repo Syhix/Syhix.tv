@@ -6,20 +6,25 @@
     padding: 0;
     user-select: none;
 }
+
 html {
     background-color: #0d1117;
 }
+
 *::-webkit-scrollbar {
     width: 8px;
 }
+
 *::-webkit-scrollbar-track {
-	background: #1e2127;
+    background: #1e2127;
     border-radius: 0px;
 }
+
 *::-webkit-scrollbar-thumb {
-	background: #010409;
-	border-radius: 4px;
+    background: #010409;
+    border-radius: 4px;
 }
+
 .content {
     padding: 2em;
     width: 600px;
@@ -33,7 +38,7 @@ html {
 .head {
     font-family: Marianne, sans-serif;
     color: white;
-    background: linear-gradient(42deg, #b364dd 10%, #40418f 100%) no-repeat;
+    background: linear-gradient(42deg, #f00 10%, #00f 100%) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,16 +52,7 @@ html {
 .nav-medias {
     padding-top: 10px;
 }
-.media {
-    display: flex;
-    justify-content: center;
-}
-.cardcontent {
-    background-color: #0d1117;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-}
+
 .fa-brands {
     font-size: 30px
 }
@@ -100,4 +96,65 @@ html {
     font-family: Marianne;
     src: url(../assets/fonts/Marianne-Bold.otf) format("opentype");
     font-display: swap
+}
+
+/* table style */
+table {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 800px;
+    height: 80px;
+    overflow: scroll;
+    border: 1pt solid white;
+    color: white;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Table row (ligne) */
+tr {
+    border: 1pt solid white;
+}
+
+/* Table data (cases valeurs du tableau) */
+td {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+
+}
+
+/* Table header (titre du tableau) */
+th {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    border: 1pt solid white;
+}
+
+
+/* Import style w3school pour tooltip (flemme de le faire) */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
