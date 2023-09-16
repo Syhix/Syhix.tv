@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 }
 
 // Exécution de la requête SQL pour extraire les données de la base de données
-$resultat = $conn->query('SELECT * FROM `forgefiles`');
+$resultat = $conn->query('SELECT * FROM `forgefiles` order by dateTime desc');
 
 // Création d'un tableau associatif pour stocker les données
 $tableau_data = array();
